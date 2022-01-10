@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,19 +18,52 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.App-sidebar {
+  background-color: #4C5C8A;
+  min-width: 200;
+  min-height: 100%;
+  width: 200;
+  height: 1000;
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App-chat-background {
+  background-color: pink;
+  display: flex;
+  flex: 1;
+}
+
+.column {
+  display: flex;
+  background-color: plum;
+  flex-basis: 100%;
+  flex: 1;
+  height: 500;
+}
+
+.table, th, td {
+  border: 0px solid white;
+  border-collapse: collapse;
+  padding: 0;
+}
+
+.textInputBar {
+  display: flex;
+  flex: 1;
+  background-color: whitesmoke;
+  margin: 8px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  color: gray;
+  border-radius: 30px;
+  box-shadow: 5px 5px 3px 1px gray;
 }
 
 @keyframes App-logo-spin {
